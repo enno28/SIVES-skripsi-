@@ -1,0 +1,288 @@
+15B9 .START (2018-07-03 09:19:25) phpCAS-1.3.5 ****************** [CAS.php:468]
+15B9 .Loaded configuration:
+15B9 .a:19:{s:12:"cas_hostname";s:13:"cas.ipb.ac.id";s:14:"cas_real_hosts";s:13:"cas.ipb.ac.id";s:16:"cas_session_name";s:7:"CASAuth";s:19:"cas_control_session";b:0;s:9:"cas_proxy";b:0;s:8:"cas_port";i:443;s:7:"cas_uri";s:4:"/cas";s:14:"cas_validation";s:0:"";s:8:"cas_cert";s:0:"";s:15:"cas_validate_cn";b:1;s:13:"cas_login_url";s:0:"";s:14:"cas_logout_url";s:32:"https://cas.ipb.ac.id/cas/logout";s:19:"cas_logout_redirect";s:0:"";s:17:"cas_redirect_path";s:0:"";s:15:"cas_enable_saml";b:1;s:11:"cas_version";s:3:"2.0";s:9:"cas_debug";b:1;s:18:"cas_verbose_errors";b:1;s:14:"cas_masquerade";s:0:"";}
+15B9 .=> phpCAS::client('S1', 'cas.ipb.ac.id', 443, '/cas', false) [CasManager.php:97]
+15B9 .|    => CAS_Client::__construct('S1', false, 'cas.ipb.ac.id', 443, '/cas', false) [CAS.php:359]
+15B9 .|    |    Starting a new session 0o272iko6t3f5ite4oc5ialebv [Client.php:932]
+15B9 .|    |    Session is not authenticated [Client.php:938]
+15B9 .|    <= ''
+15B9 .<= ''
+15B9 .=> CAS_Client::handleLogoutRequests(true, array (  0 => 'cas.ipb.ac.id',)) [CAS.php:1276]
+15B9 .|    Not a logout request [Client.php:1739]
+15B9 .<= ''
+15B9 .=> phpCAS::setNoCasServerValidation() [CasManager.php:156]
+15B9 .|    You have configured no validation of the legitimacy of the cas server. This is not recommended for production use. [CAS.php:1644]
+15B9 .<= ''
+15B9 .=> phpCAS::setServerLoginURL('') [CasManager.php:55]
+15B9 .<= ''
+15B9 .=> phpCAS::setServerLogoutURL('https://cas.ipb.ac.id/cas/logout') [CasManager.php:62]
+15B9 .<= ''
+15B9 .=> phpCAS::error('CAS_OutOfSequenceBeforeAuthenticationCallException: An authentication call hasn\'t happened yet.') [CAS.php:1182]
+15B9 .|    CAS_OutOfSequenceBeforeAuthenticationCallException: An authentication call hasn't happened yet. in C:\xampp\htdocs\SIVES\vendor\subfission\cas\src\Subfission\Cas\CasManager.phpon line 193 [CAS.php:566]
+15B9 .<= ''
+FAD6 .START (2018-07-03 09:19:44) phpCAS-1.3.5 ****************** [CAS.php:468]
+FAD6 .Loaded configuration:
+FAD6 .a:19:{s:12:"cas_hostname";s:13:"cas.ipb.ac.id";s:14:"cas_real_hosts";s:13:"cas.ipb.ac.id";s:16:"cas_session_name";s:7:"CASAuth";s:19:"cas_control_session";b:0;s:9:"cas_proxy";b:0;s:8:"cas_port";i:443;s:7:"cas_uri";s:4:"/cas";s:14:"cas_validation";s:0:"";s:8:"cas_cert";s:0:"";s:15:"cas_validate_cn";b:1;s:13:"cas_login_url";s:0:"";s:14:"cas_logout_url";s:32:"https://cas.ipb.ac.id/cas/logout";s:19:"cas_logout_redirect";s:0:"";s:17:"cas_redirect_path";s:0:"";s:15:"cas_enable_saml";b:1;s:11:"cas_version";s:3:"2.0";s:9:"cas_debug";b:1;s:18:"cas_verbose_errors";b:1;s:14:"cas_masquerade";s:0:"";}
+FAD6 .=> phpCAS::client('S1', 'cas.ipb.ac.id', 443, '/cas', false) [CasManager.php:97]
+FAD6 .|    => CAS_Client::__construct('S1', false, 'cas.ipb.ac.id', 443, '/cas', false) [CAS.php:359]
+FAD6 .|    |    Starting a new session 0o272iko6t3f5ite4oc5ialebv [Client.php:932]
+FAD6 .|    |    Session is not authenticated [Client.php:938]
+FAD6 .|    <= ''
+FAD6 .<= ''
+FAD6 .=> CAS_Client::handleLogoutRequests(true, array (  0 => 'cas.ipb.ac.id',)) [CAS.php:1276]
+FAD6 .|    Not a logout request [Client.php:1739]
+FAD6 .<= ''
+FAD6 .=> phpCAS::setNoCasServerValidation() [CasManager.php:156]
+FAD6 .|    You have configured no validation of the legitimacy of the cas server. This is not recommended for production use. [CAS.php:1644]
+FAD6 .<= ''
+FAD6 .=> phpCAS::setServerLoginURL('') [CasManager.php:55]
+FAD6 .<= ''
+FAD6 .=> phpCAS::setServerLogoutURL('https://cas.ipb.ac.id/cas/logout') [CasManager.php:62]
+FAD6 .<= ''
+FAD6 .=> phpCAS::checkAuthentication() [CasManager.php:299]
+FAD6 .|    => CAS_Client::checkAuthentication() [CAS.php:1078]
+FAD6 .|    |    => CAS_Client::isAuthenticated() [Client.php:1331]
+FAD6 .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1393]
+FAD6 .|    |    |    |    no user found [Client.php:1635]
+FAD6 .|    |    |    <= false
+FAD6 .|    |    |    no ticket found [Client.php:1494]
+FAD6 .|    |    <= false
+FAD6 .|    |    user is not authenticated (cache reset) [Client.php:1369]
+FAD6 .|    |    => CAS_Client::redirectToCas(true) [Client.php:1370]
+FAD6 .|    |    |    => CAS_Client::getServerLoginURL(true, false) [Client.php:1656]
+FAD6 .|    |    |    |    => CAS_Client::getURL() [Client.php:342]
+FAD6 .|    |    |    |    |    Final URI: http://127.0.0.1:8000/coba [Client.php:3548]
+FAD6 .|    |    |    |    <= 'http://127.0.0.1:8000/coba'
+FAD6 .|    |    |    <= 'https://cas.ipb.ac.id/cas/login?service=http%3A%2F%2F127.0.0.1%3A8000%2Fcoba&gateway=true'
+FAD6 .|    |    |    Redirect to : https://cas.ipb.ac.id/cas/login?service=http%3A%2F%2F127.0.0.1%3A8000%2Fcoba&gateway=true [Client.php:1663]
+FAD6 .|    |    |    exit()
+FAD6 .|    |    |    -
+FAD6 .|    |    -
+FAD6 .|    -
+6B36 .START (2018-07-03 09:20:08) phpCAS-1.3.5 ****************** [CAS.php:468]
+6B36 .Loaded configuration:
+6B36 .a:19:{s:12:"cas_hostname";s:13:"cas.ipb.ac.id";s:14:"cas_real_hosts";s:13:"cas.ipb.ac.id";s:16:"cas_session_name";s:7:"CASAuth";s:19:"cas_control_session";b:0;s:9:"cas_proxy";b:0;s:8:"cas_port";i:443;s:7:"cas_uri";s:4:"/cas";s:14:"cas_validation";s:0:"";s:8:"cas_cert";s:0:"";s:15:"cas_validate_cn";b:1;s:13:"cas_login_url";s:0:"";s:14:"cas_logout_url";s:32:"https://cas.ipb.ac.id/cas/logout";s:19:"cas_logout_redirect";s:0:"";s:17:"cas_redirect_path";s:0:"";s:15:"cas_enable_saml";b:1;s:11:"cas_version";s:3:"2.0";s:9:"cas_debug";b:1;s:18:"cas_verbose_errors";b:1;s:14:"cas_masquerade";s:0:"";}
+6B36 .=> phpCAS::client('S1', 'cas.ipb.ac.id', 443, '/cas', false) [CasManager.php:97]
+6B36 .|    => CAS_Client::__construct('S1', false, 'cas.ipb.ac.id', 443, '/cas', false) [CAS.php:359]
+6B36 .|    |    Starting a new session 0o272iko6t3f5ite4oc5ialebv [Client.php:932]
+6B36 .|    |    Session is not authenticated [Client.php:938]
+6B36 .|    <= ''
+6B36 .<= ''
+6B36 .=> CAS_Client::handleLogoutRequests(true, array (  0 => 'cas.ipb.ac.id',)) [CAS.php:1276]
+6B36 .|    Not a logout request [Client.php:1739]
+6B36 .<= ''
+6B36 .=> phpCAS::setNoCasServerValidation() [CasManager.php:156]
+6B36 .|    You have configured no validation of the legitimacy of the cas server. This is not recommended for production use. [CAS.php:1644]
+6B36 .<= ''
+6B36 .=> phpCAS::setServerLoginURL('') [CasManager.php:55]
+6B36 .<= ''
+6B36 .=> phpCAS::setServerLogoutURL('https://cas.ipb.ac.id/cas/logout') [CasManager.php:62]
+6B36 .<= ''
+6B36 .=> phpCAS::checkAuthentication() [CasManager.php:299]
+6B36 .|    => CAS_Client::checkAuthentication() [CAS.php:1078]
+6B36 .|    |    => CAS_Client::isAuthenticated() [Client.php:1331]
+6B36 .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1393]
+6B36 .|    |    |    |    no user found [Client.php:1635]
+6B36 .|    |    |    <= false
+6B36 .|    |    |    no ticket found [Client.php:1494]
+6B36 .|    |    <= false
+6B36 .|    <= false
+6B36 .<= false
+6B36 .=> phpCAS::forceAuthentication() [CasManager.php:170]
+6B36 .|    => CAS_Client::forceAuthentication() [CAS.php:1098]
+6B36 .|    |    => CAS_Client::isAuthenticated() [Client.php:1280]
+6B36 .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1393]
+6B36 .|    |    |    |    no user found [Client.php:1635]
+6B36 .|    |    |    <= false
+6B36 .|    |    |    no ticket found [Client.php:1494]
+6B36 .|    |    <= false
+6B36 .|    |    => CAS_Client::redirectToCas(false) [Client.php:1289]
+6B36 .|    |    |    => CAS_Client::getServerLoginURL(false, false) [Client.php:1656]
+6B36 .|    |    |    |    => CAS_Client::getURL() [Client.php:342]
+6B36 .|    |    |    |    |    Final URI: http://127.0.0.1:8000/coba [Client.php:3548]
+6B36 .|    |    |    |    <= 'http://127.0.0.1:8000/coba'
+6B36 .|    |    |    <= 'https://cas.ipb.ac.id/cas/login?service=http%3A%2F%2F127.0.0.1%3A8000%2Fcoba'
+6B36 .|    |    |    Redirect to : https://cas.ipb.ac.id/cas/login?service=http%3A%2F%2F127.0.0.1%3A8000%2Fcoba [Client.php:1663]
+6B36 .|    |    |    exit()
+6B36 .|    |    |    -
+6B36 .|    |    -
+6B36 .|    -
+AA16 .START (2018-07-03 09:23:17) phpCAS-1.3.5 ****************** [CAS.php:468]
+AA16 .Loaded configuration:
+AA16 .a:19:{s:12:"cas_hostname";s:13:"cas.ipb.ac.id";s:14:"cas_real_hosts";s:13:"cas.ipb.ac.id";s:16:"cas_session_name";s:7:"CASAuth";s:19:"cas_control_session";b:0;s:9:"cas_proxy";b:0;s:8:"cas_port";i:443;s:7:"cas_uri";s:4:"/cas";s:14:"cas_validation";s:0:"";s:8:"cas_cert";s:0:"";s:15:"cas_validate_cn";b:1;s:13:"cas_login_url";s:0:"";s:14:"cas_logout_url";s:32:"https://cas.ipb.ac.id/cas/logout";s:19:"cas_logout_redirect";s:0:"";s:17:"cas_redirect_path";s:0:"";s:15:"cas_enable_saml";b:1;s:11:"cas_version";s:3:"2.0";s:9:"cas_debug";b:1;s:18:"cas_verbose_errors";b:1;s:14:"cas_masquerade";s:0:"";}
+AA16 .=> phpCAS::client('S1', 'cas.ipb.ac.id', 443, '/cas', false) [CasManager.php:97]
+AA16 .|    => CAS_Client::__construct('S1', false, 'cas.ipb.ac.id', 443, '/cas', false) [CAS.php:359]
+AA16 .|    |    Starting a new session uhfrqln264c2o124m5j8ul0j84 [Client.php:932]
+AA16 .|    |    Session is not authenticated [Client.php:938]
+AA16 .|    |    Ticket 'ST-141-wVKnETE2GFA5eDgPqmeAso8M20w-cas' found [Client.php:1020]
+AA16 .|    <= ''
+AA16 .<= ''
+AA16 .=> CAS_Client::handleLogoutRequests(true, array (  0 => 'cas.ipb.ac.id',)) [CAS.php:1276]
+AA16 .|    Not a logout request [Client.php:1739]
+AA16 .<= ''
+AA16 .=> phpCAS::setNoCasServerValidation() [CasManager.php:156]
+AA16 .|    You have configured no validation of the legitimacy of the cas server. This is not recommended for production use. [CAS.php:1644]
+AA16 .<= ''
+AA16 .=> phpCAS::setServerLoginURL('') [CasManager.php:55]
+AA16 .<= ''
+AA16 .=> phpCAS::setServerLogoutURL('https://cas.ipb.ac.id/cas/logout') [CasManager.php:62]
+AA16 .<= ''
+AA16 .=> phpCAS::checkAuthentication() [CasManager.php:299]
+AA16 .|    => CAS_Client::checkAuthentication() [CAS.php:1078]
+AA16 .|    |    => CAS_Client::isAuthenticated() [Client.php:1331]
+AA16 .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1393]
+AA16 .|    |    |    |    no user found [Client.php:1635]
+AA16 .|    |    |    <= false
+AA16 .|    |    |    SAML 1.1 ticket `ST-141-wVKnETE2GFA5eDgPqmeAso8M20w-cas' is present [Client.php:1475]
+AA16 .|    |    |    => CAS_Client::validateSA('', NULL, NULL, false) [Client.php:1478]
+AA16 .|    |    |    |    => CAS_Client::getServerSamlValidateURL() [Client.php:2070]
+AA16 .|    |    |    |    |    => CAS_Client::getURL() [Client.php:477]
+AA16 .|    |    |    |    |    |    Final URI: http://127.0.0.1:8000/coba [Client.php:3548]
+AA16 .|    |    |    |    |    <= 'http://127.0.0.1:8000/coba'
+AA16 .|    |    |    |    <= 'https://cas.ipb.ac.id/cas/samlValidate?TARGET=http%3A%2F%2F127.0.0.1%3A8000%2Fcoba'
+AA16 .|    |    |    |    => CAS_Client::_readURL('https://cas.ipb.ac.id/cas/samlValidate?TARGET=http%3A%2F%2F127.0.0.1%3A8000%2Fcoba', NULL, NULL, NULL) [Client.php:2078]
+AA16 .|    |    |    |    |    => CAS_Client::_buildSAMLPayload() [Client.php:2822]
+AA16 .|    |    |    |    |    <= '<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Header/><SOAP-ENV:Body><samlp:Request xmlns:samlp="urn:oasis:names:tc:SAML:1.0:protocol"  MajorVersion="1" MinorVersion="1" RequestID="_192.168.16.51.1024506224022" IssueInstant="2002-06-19T17:03:44.022Z"><samlp:AssertionArtifact>ST-141-wVKnETE2GFA5eDgPqmeAso8M20w-cas</samlp:AssertionArtifact></samlp:Request></SOAP-ENV:Body></SOAP-ENV:Envelope>'
+AA16 .|    |    |    |    |    => CAS_Request_CurlRequest::sendRequest() [AbstractRequest.php:242]
+AA16 .|    |    |    |    |    |    Response Body: 
+AA16 .|    |    |    |    |    |    <?xml version="1.0" encoding="UTF-8"?>
+AA16 .|    |    |    |    |    |    <SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Body><saml1p:Response InResponseTo="127.0.0.1" IssueInstant="2018-07-03T09:23:13.508Z" MajorVersion="1" MinorVersion="1" ResponseID="_6c70d6a97c4b5e7ffeb6bcd174c3161f" xmlns:saml1p="urn:oasis:names:tc:SAML:1.0:protocol"><saml1p:Status><saml1p:StatusCode Value="saml1p:Success"/></saml1p:Status><saml1:Assertion AssertionID="_23557a0c9ffc58161cf8675ace84bc0e" IssueInstant="2018-07-03T09:23:13.508Z" Issuer="localhost" MajorVersion="1" MinorVersion="1" xmlns:saml1="urn:oasis:names:tc:SAML:1.0:assertion"><saml1:Conditions NotBefore="2018-07-03T09:23:13.508Z" NotOnOrAfter="2018-07-03T09:23:43.508Z"><saml1:AudienceRestrictionCondition><saml1:Audience>http://127.0.0.1:8000/coba</saml1:Audience></saml1:AudienceRestrictionCondition></saml1:Conditions><saml1:AuthenticationStatement AuthenticationInstant="2018-07-03T09:23:16.891Z" AuthenticationMethod="urn:oasis:names:tc:SAML:1.0:am:password"><saml1:Subject><saml1:NameIdentifier>sutrisno_28</saml1:NameIdentifier><saml1:SubjectConfirmation><saml1:ConfirmationMethod>urn:oasis:names:tc:SAML:1.0:cm:artifact</saml1:ConfirmationMethod></saml1:SubjectConfirmation></saml1:Subject></saml1:AuthenticationStatement><saml1:AttributeStatement><saml1:Subject><saml1:NameIdentifier>sutrisno_28</saml1:NameIdentifier><saml1:SubjectConfirmation><saml1:ConfirmationMethod>urn:oasis:names:tc:SAML:1.0:cm:artifact</saml1:ConfirmationMethod></saml1:SubjectConfirmation></saml1:Subject><saml1:Attribute AttributeName="Email" AttributeNamespace="http://www.ja-sig.org/products/cas/"><saml1:AttributeValue>a.sutrisno49@gmail.com</saml1:AttributeValue></saml1:Attribute><saml1:Attribute AttributeName="successfulAuthenticationHandlers" AttributeNamespace="http://www.ja-sig.org/products/cas/"><saml1:AttributeValue>LdapAuthenticationHandler</saml1:AttributeValue></saml1:Attribute><saml1:Attribute AttributeName="objectClass" AttributeNamespace="http://www.ja-sig.org/products/cas/"><saml1:AttributeValue>top</saml1:AttributeValue><saml1:AttributeValue>student</saml1:AttributeValue><saml1:AttributeValue>inetOrgPerson</saml1:AttributeValue><saml1:AttributeValue>organizationalPerson</saml1:AttributeValue><saml1:AttributeValue>person</saml1:AttributeValue></saml1:Attribute><saml1:Attribute AttributeName="cn" AttributeNamespace="http://www.ja-sig.org/products/cas/"><saml1:AttributeValue>Sutrisno</saml1:AttributeValue></saml1:Attribute><saml1:Attribute AttributeName="OrangID" AttributeNamespace="http://www.ja-sig.org/products/cas/"><saml1:AttributeValue>24688</saml1:AttributeValue></saml1:Attribute><saml1:Attribute AttributeName="nrp" AttributeNamespace="http://www.ja-sig.org/products/cas/"><saml1:AttributeValue>G64140045</saml1:AttributeValue></saml1:Attribute><saml1:Attribute AttributeName="credentialType" AttributeNamespace="http://www.ja-sig.org/products/cas/"><saml1:AttributeValue>UsernamePasswordCredential</saml1:AttributeValue></saml1:Attribute><saml1:Attribute AttributeName="samlAuthenticationStatementAuthMethod" AttributeNamespace="http://www.ja-sig.org/products/cas/"><saml1:AttributeValue>urn:oasis:names:tc:SAML:1.0:am:password</saml1:AttributeValue></saml1:Attribute><saml1:Attribute AttributeName="uid" AttributeNamespace="http://www.ja-sig.org/products/cas/"><saml1:AttributeValue>sutrisno_28</saml1:AttributeValue></saml1:Attribute><saml1:Attribute AttributeName="authenticationMethod" AttributeNamespace="http://www.ja-sig.org/products/cas/"><saml1:AttributeValue>LdapAuthenticationHandler</saml1:AttributeValue></saml1:Attribute><saml1:Attribute AttributeName="MahasiswaID" AttributeNamespace="http://www.ja-sig.org/products/cas/"><saml1:AttributeValue>24688</saml1:AttributeValue></saml1:Attribute><saml1:Attribute AttributeName="sn" AttributeNamespace="http://www.ja-sig.org/products/cas/"><saml1:AttributeValue>Sutrisno</saml1:AttributeValue></saml1:Attribute></saml1:AttributeStatement></saml1:Assertion></saml1p:Response></SOAP-ENV:Body></SOAP-ENV:Envelope>
+AA16 .|    |    |    |    |    |     [CurlRequest.php:84]
+AA16 .|    |    |    |    |    <= true
+AA16 .|    |    |    |    <= true
+AA16 .|    |    |    |    server version: S1 [Client.php:2087]
+AA16 .|    |    |    |    NameIdentifier found [Client.php:2130]
+AA16 .|    |    |    |    user = `sutrisno_28` [Client.php:2132]
+AA16 .|    |    |    |    => CAS_Client::_setSessionAttributes('<?xml version="1.0" encoding="UTF-8"?><SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/"><SOAP-ENV:Body><saml1p:Response InResponseTo="127.0.0.1" IssueInstant="2018-07-03T09:23:13.508Z" MajorVersion="1" MinorVersion="1" ResponseID="_6c70d6a97c4b5e7ffeb6bcd174c3161f" xmlns:saml1p="urn:oasis:names:tc:SAML:1.0:protocol"><saml1p:Status><saml1p:StatusCode Value="saml1p:Success"/></saml1p:Status><saml1:Assertion AssertionID="_23557a0c9ffc58161cf8675ace84bc0e" IssueInstant="2018-07-03T09:23:13.508Z" Issuer="localhost" MajorVersion="1" MinorVersion="1" xmlns:saml1="urn:oasis:names:tc:SAML:1.0:assertion"><saml1:Conditions NotBefore="2018-07-03T09:23:13.508Z" NotOnOrAfter="2018-07-03T09:23:43.508Z"><saml1:AudienceRestrictionCondition><saml1:Audience>http://127.0.0.1:8000/coba</saml1:Audience></saml1:AudienceRestrictionCondition></saml1:Conditions><saml1:AuthenticationStatement AuthenticationInstant="2018-07-03T09:23:16.891Z" AuthenticationMethod="urn:oasis:names:tc:SAML:1.0:am:password"><saml1:Subject><saml1:NameIdentifier>sutrisno_28</saml1:NameIdentifier><saml1:SubjectConfirmation><saml1:ConfirmationMethod>urn:oasis:names:tc:SAML:1.0:cm:artifact</saml1:ConfirmationMethod></saml1:SubjectConfirmation></saml1:Subject></saml1:AuthenticationStatement><saml1:AttributeStatement><saml1:Subject><saml1:NameIdentifier>sutrisno_28</saml1:NameIdentifier><saml1:SubjectConfirmation><saml1:ConfirmationMethod>urn:oasis:names:tc:SAML:1.0:cm:artifact</saml1:ConfirmationMethod></saml1:SubjectConfirmation></saml1:Subject><saml1:Attribute AttributeName="Email" AttributeNamespace="http://www.ja-sig.org/products/cas/"><saml1:AttributeValue>a.sutrisno49@gmail.com</saml1:AttributeValue></saml1:Attribute><saml1:Attribute AttributeName="successfulAuthenticationHandlers" AttributeNamespace="http://www.ja-sig.org/products/cas/"><saml1:AttributeValue>LdapAuthenticationHandler</saml1:AttributeValue></saml1:Attribute><saml1:Attribute AttributeName="objectClass" AttributeNamespace="http://www.ja-sig.org/products/cas/"><saml1:AttributeValue>top</saml1:AttributeValue><saml1:AttributeValue>student</saml1:AttributeValue><saml1:AttributeValue>inetOrgPerson</saml1:AttributeValue><saml1:AttributeValue>organizationalPerson</saml1:AttributeValue><saml1:AttributeValue>person</saml1:AttributeValue></saml1:Attribute><saml1:Attribute AttributeName="cn" AttributeNamespace="http://www.ja-sig.org/products/cas/"><saml1:AttributeValue>Sutrisno</saml1:AttributeValue></saml1:Attribute><saml1:Attribute AttributeName="OrangID" AttributeNamespace="http://www.ja-sig.org/products/cas/"><saml1:AttributeValue>24688</saml1:AttributeValue></saml1:Attribute><saml1:Attribute AttributeName="nrp" AttributeNamespace="http://www.ja-sig.org/products/cas/"><saml1:AttributeValue>G64140045</saml1:AttributeValue></saml1:Attribute><saml1:Attribute AttributeName="credentialType" AttributeNamespace="http://www.ja-sig.org/products/cas/"><saml1:AttributeValue>UsernamePasswordCredential</saml1:AttributeValue></saml1:Attribute><saml1:Attribute AttributeName="samlAuthenticationStatementAuthMethod" AttributeNamespace="http://www.ja-sig.org/products/cas/"><saml1:AttributeValue>urn:oasis:names:tc:SAML:1.0:am:password</saml1:AttributeValue></saml1:Attribute><saml1:Attribute AttributeName="uid" AttributeNamespace="http://www.ja-sig.org/products/cas/"><saml1:AttributeValue>sutrisno_28</saml1:AttributeValue></saml1:Attribute><saml1:Attribute AttributeName="authenticationMethod" AttributeNamespace="http://www.ja-sig.org/products/cas/"><saml1:AttributeValue>LdapAuthenticationHandler</saml1:AttributeValue></saml1:Attribute><saml1:Attribute AttributeName="MahasiswaID" AttributeNamespace="http://www.ja-sig.org/products/cas/"><saml1:AttributeValue>24688</saml1:AttributeValue></saml1:Attribute><saml1:Attribute AttributeName="sn" AttributeNamespace="http://www.ja-sig.org/products/cas/"><saml1:AttributeValue>Sutrisno</saml1:AttributeValue></saml1:Attribute></saml1:AttributeStatement></saml1:Assertion></saml1p:Response></SOAP-ENV:Body></SOAP-ENV:Envelope>') [Client.php:2134]
+AA16 .|    |    |    |    |    * Email=a.sutrisno49@gmail.com [Client.php:2197]
+AA16 .|    |    |    |    |    * successfulAuthenticationHandlers=LdapAuthenticationHandler [Client.php:2197]
+AA16 .|    |    |    |    |    * objectClass=Array
+AA16 .|    |    |    |    |    (
+AA16 .|    |    |    |    |        [0] => top
+AA16 .|    |    |    |    |        [1] => student
+AA16 .|    |    |    |    |        [2] => inetOrgPerson
+AA16 .|    |    |    |    |        [3] => organizationalPerson
+AA16 .|    |    |    |    |        [4] => person
+AA16 .|    |    |    |    |    )
+AA16 .|    |    |    |    |     [Client.php:2194]
+AA16 .|    |    |    |    |    * cn=Sutrisno [Client.php:2197]
+AA16 .|    |    |    |    |    * OrangID=24688 [Client.php:2197]
+AA16 .|    |    |    |    |    * nrp=G64140045 [Client.php:2197]
+AA16 .|    |    |    |    |    * credentialType=UsernamePasswordCredential [Client.php:2197]
+AA16 .|    |    |    |    |    * samlAuthenticationStatementAuthMethod=urn:oasis:names:tc:SAML:1.0:am:password [Client.php:2197]
+AA16 .|    |    |    |    |    * uid=sutrisno_28 [Client.php:2197]
+AA16 .|    |    |    |    |    * authenticationMethod=LdapAuthenticationHandler [Client.php:2197]
+AA16 .|    |    |    |    |    * MahasiswaID=24688 [Client.php:2197]
+AA16 .|    |    |    |    |    * sn=Sutrisno [Client.php:2197]
+AA16 .|    |    |    |    <= true
+AA16 .|    |    |    |    => CAS_Client::_renameSession('ST-141-wVKnETE2GFA5eDgPqmeAso8M20w-cas') [Client.php:2147]
+AA16 .|    |    |    |    |    Skipping session rename since phpCAS is not handling the session. [Client.php:3698]
+AA16 .|    |    |    |    <= ''
+AA16 .|    |    |    <= true
+AA16 .|    |    |    SAML 1.1 ticket `ST-141-wVKnETE2GFA5eDgPqmeAso8M20w-cas' was validated [Client.php:1481]
+AA16 .|    |    |    => CAS_Client::getURL() [Client.php:1518]
+AA16 .|    |    |    <= 'http://127.0.0.1:8000/coba'
+AA16 .|    |    |    Prepare redirect to : http://127.0.0.1:8000/coba [Client.php:1518]
+AA16 .|    |    |    => CAS_Client::getURL() [Client.php:1520]
+AA16 .|    |    |    <= 'http://127.0.0.1:8000/coba'
+AA16 .|    |    |    exit()
+AA16 .|    |    |    -
+AA16 .|    |    -
+AA16 .|    -
+E04D .START (2018-07-03 09:23:19) phpCAS-1.3.5 ****************** [CAS.php:468]
+E04D .Loaded configuration:
+E04D .a:19:{s:12:"cas_hostname";s:13:"cas.ipb.ac.id";s:14:"cas_real_hosts";s:13:"cas.ipb.ac.id";s:16:"cas_session_name";s:7:"CASAuth";s:19:"cas_control_session";b:0;s:9:"cas_proxy";b:0;s:8:"cas_port";i:443;s:7:"cas_uri";s:4:"/cas";s:14:"cas_validation";s:0:"";s:8:"cas_cert";s:0:"";s:15:"cas_validate_cn";b:1;s:13:"cas_login_url";s:0:"";s:14:"cas_logout_url";s:32:"https://cas.ipb.ac.id/cas/logout";s:19:"cas_logout_redirect";s:0:"";s:17:"cas_redirect_path";s:0:"";s:15:"cas_enable_saml";b:1;s:11:"cas_version";s:3:"2.0";s:9:"cas_debug";b:1;s:18:"cas_verbose_errors";b:1;s:14:"cas_masquerade";s:0:"";}
+E04D .=> phpCAS::client('S1', 'cas.ipb.ac.id', 443, '/cas', false) [CasManager.php:97]
+E04D .|    => CAS_Client::__construct('S1', false, 'cas.ipb.ac.id', 443, '/cas', false) [CAS.php:359]
+E04D .|    |    Starting a new session uhfrqln264c2o124m5j8ul0j84 [Client.php:932]
+E04D .|    |    Session is authenticated as: sutrisno_28 [Client.php:936]
+E04D .|    <= ''
+E04D .<= ''
+E04D .=> CAS_Client::handleLogoutRequests(true, array (  0 => 'cas.ipb.ac.id',)) [CAS.php:1276]
+E04D .|    Not a logout request [Client.php:1739]
+E04D .<= ''
+E04D .=> phpCAS::setNoCasServerValidation() [CasManager.php:156]
+E04D .|    You have configured no validation of the legitimacy of the cas server. This is not recommended for production use. [CAS.php:1644]
+E04D .<= ''
+E04D .=> phpCAS::setServerLoginURL('') [CasManager.php:55]
+E04D .<= ''
+E04D .=> phpCAS::setServerLogoutURL('https://cas.ipb.ac.id/cas/logout') [CasManager.php:62]
+E04D .<= ''
+E04D .=> phpCAS::checkAuthentication() [CasManager.php:299]
+E04D .|    => CAS_Client::checkAuthentication() [CAS.php:1078]
+E04D .|    |    => CAS_Client::isAuthenticated() [Client.php:1331]
+E04D .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1393]
+E04D .|    |    |    |    user = `sutrisno_28' [Client.php:1622]
+E04D .|    |    |    <= true
+E04D .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1416]
+E04D .|    |    <= true
+E04D .|    |    user is authenticated [Client.php:1332]
+E04D .|    <= true
+E04D .<= true
+2CAC .START (2018-07-03 09:23:24) phpCAS-1.3.5 ****************** [CAS.php:468]
+2CAC .Loaded configuration:
+2CAC .a:19:{s:12:"cas_hostname";s:13:"cas.ipb.ac.id";s:14:"cas_real_hosts";s:13:"cas.ipb.ac.id";s:16:"cas_session_name";s:7:"CASAuth";s:19:"cas_control_session";b:0;s:9:"cas_proxy";b:0;s:8:"cas_port";i:443;s:7:"cas_uri";s:4:"/cas";s:14:"cas_validation";s:0:"";s:8:"cas_cert";s:0:"";s:15:"cas_validate_cn";b:1;s:13:"cas_login_url";s:0:"";s:14:"cas_logout_url";s:32:"https://cas.ipb.ac.id/cas/logout";s:19:"cas_logout_redirect";s:0:"";s:17:"cas_redirect_path";s:0:"";s:15:"cas_enable_saml";b:1;s:11:"cas_version";s:3:"2.0";s:9:"cas_debug";b:1;s:18:"cas_verbose_errors";b:1;s:14:"cas_masquerade";s:0:"";}
+2CAC .=> phpCAS::client('S1', 'cas.ipb.ac.id', 443, '/cas', false) [CasManager.php:97]
+2CAC .|    => CAS_Client::__construct('S1', false, 'cas.ipb.ac.id', 443, '/cas', false) [CAS.php:359]
+2CAC .|    |    Starting a new session uhfrqln264c2o124m5j8ul0j84 [Client.php:932]
+2CAC .|    |    Session is authenticated as: sutrisno_28 [Client.php:936]
+2CAC .|    |    Ticket 'ST-142-HQv9F4boFTdQrDhGNn-HmNgR-og-cas' found [Client.php:1020]
+2CAC .|    <= ''
+2CAC .<= ''
+2CAC .=> CAS_Client::handleLogoutRequests(true, array (  0 => 'cas.ipb.ac.id',)) [CAS.php:1276]
+2CAC .|    Not a logout request [Client.php:1739]
+2CAC .<= ''
+2CAC .=> phpCAS::setNoCasServerValidation() [CasManager.php:156]
+2CAC .|    You have configured no validation of the legitimacy of the cas server. This is not recommended for production use. [CAS.php:1644]
+2CAC .<= ''
+2CAC .=> phpCAS::setServerLoginURL('') [CasManager.php:55]
+2CAC .<= ''
+2CAC .=> phpCAS::setServerLogoutURL('https://cas.ipb.ac.id/cas/logout') [CasManager.php:62]
+2CAC .<= ''
+2CAC .=> phpCAS::checkAuthentication() [CasManager.php:299]
+2CAC .|    => CAS_Client::checkAuthentication() [CAS.php:1078]
+2CAC .|    |    => CAS_Client::isAuthenticated() [Client.php:1331]
+2CAC .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1393]
+2CAC .|    |    |    |    user = `sutrisno_28' [Client.php:1622]
+2CAC .|    |    |    <= true
+2CAC .|    |    |    ticket was present and will be discarded, use renewAuthenticate() [Client.php:1397]
+2CAC .|    |    |    => CAS_Client::getURL() [Client.php:1400]
+2CAC .|    |    |    |    Final URI: http://127.0.0.1:8000/coba [Client.php:3548]
+2CAC .|    |    |    <= 'http://127.0.0.1:8000/coba'
+2CAC .|    |    |    Prepare redirect to : http://127.0.0.1:8000/coba [Client.php:1400]
+2CAC .|    |    |    => CAS_Client::getURL() [Client.php:1402]
+2CAC .|    |    |    <= 'http://127.0.0.1:8000/coba'
+2CAC .|    |    |    exit()
+2CAC .|    |    |    -
+2CAC .|    |    -
+2CAC .|    -
+9F24 .START (2018-07-03 09:23:24) phpCAS-1.3.5 ****************** [CAS.php:468]
+9F24 .Loaded configuration:
+9F24 .a:19:{s:12:"cas_hostname";s:13:"cas.ipb.ac.id";s:14:"cas_real_hosts";s:13:"cas.ipb.ac.id";s:16:"cas_session_name";s:7:"CASAuth";s:19:"cas_control_session";b:0;s:9:"cas_proxy";b:0;s:8:"cas_port";i:443;s:7:"cas_uri";s:4:"/cas";s:14:"cas_validation";s:0:"";s:8:"cas_cert";s:0:"";s:15:"cas_validate_cn";b:1;s:13:"cas_login_url";s:0:"";s:14:"cas_logout_url";s:32:"https://cas.ipb.ac.id/cas/logout";s:19:"cas_logout_redirect";s:0:"";s:17:"cas_redirect_path";s:0:"";s:15:"cas_enable_saml";b:1;s:11:"cas_version";s:3:"2.0";s:9:"cas_debug";b:1;s:18:"cas_verbose_errors";b:1;s:14:"cas_masquerade";s:0:"";}
+9F24 .=> phpCAS::client('S1', 'cas.ipb.ac.id', 443, '/cas', false) [CasManager.php:97]
+9F24 .|    => CAS_Client::__construct('S1', false, 'cas.ipb.ac.id', 443, '/cas', false) [CAS.php:359]
+9F24 .|    |    Starting a new session uhfrqln264c2o124m5j8ul0j84 [Client.php:932]
+9F24 .|    |    Session is authenticated as: sutrisno_28 [Client.php:936]
+9F24 .|    <= ''
+9F24 .<= ''
+9F24 .=> CAS_Client::handleLogoutRequests(true, array (  0 => 'cas.ipb.ac.id',)) [CAS.php:1276]
+9F24 .|    Not a logout request [Client.php:1739]
+9F24 .<= ''
+9F24 .=> phpCAS::setNoCasServerValidation() [CasManager.php:156]
+9F24 .|    You have configured no validation of the legitimacy of the cas server. This is not recommended for production use. [CAS.php:1644]
+9F24 .<= ''
+9F24 .=> phpCAS::setServerLoginURL('') [CasManager.php:55]
+9F24 .<= ''
+9F24 .=> phpCAS::setServerLogoutURL('https://cas.ipb.ac.id/cas/logout') [CasManager.php:62]
+9F24 .<= ''
+9F24 .=> phpCAS::checkAuthentication() [CasManager.php:299]
+9F24 .|    => CAS_Client::checkAuthentication() [CAS.php:1078]
+9F24 .|    |    => CAS_Client::isAuthenticated() [Client.php:1331]
+9F24 .|    |    |    => CAS_Client::_wasPreviouslyAuthenticated() [Client.php:1393]
+9F24 .|    |    |    |    user = `sutrisno_28' [Client.php:1622]
+9F24 .|    |    |    <= true
+9F24 .|    |    |    user was already authenticated, no need to look for tickets [Client.php:1416]
+9F24 .|    |    <= true
+9F24 .|    |    user is authenticated [Client.php:1332]
+9F24 .|    <= true
+9F24 .<= true

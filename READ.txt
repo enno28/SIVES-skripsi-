@@ -1,0 +1,3 @@
+Keterangan:
+1. login yang digunakan masih login laravel (belum LDAP IPB)
+2. jika ingin menambahkan user baru (ketik localhost://registrasi)
